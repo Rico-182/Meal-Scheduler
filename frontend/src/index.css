@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+    name: "yaledark";
+    default: false;
+    prefersdark: true;
+    color-scheme: dark;
+  
+    --color-base-100: oklch(15% 0.02 240); /* background */
+    --color-base-200: oklch(20% 0.02 240); /* cards */
+    --color-base-300: oklch(25% 0.03 240); /* input */
+    --color-base-content: oklch(95% 0.02 240); /* text */
+  
+    --color-primary: #3B82F6;
+    --color-primary-content: #ffffff;
+  
+    --color-secondary: #324d73;
+    --color-secondary-content: #e5ecf7;
+  
+    --color-accent: #4a90e2; /* Cool blue accent */
+    --color-accent-content: #ffffff;
+  
+    --color-neutral: #2e2e2e;
+    --color-neutral-content: #f3f3f3;
+  
+    --color-info: #93c5fd;
+    --color-success: #4ade80;
+    --color-warning: #facc15;
+    --color-error: #f87171;
+  
+    --radius-box: 1rem;
+    --border: 1px;
+    --depth: 1;
+  }
+  
+
+calendar-date::part(day):hover {
+    @apply bg-base-300 cursor-pointer;
+}
